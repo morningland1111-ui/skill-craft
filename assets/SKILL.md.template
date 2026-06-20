@@ -1,0 +1,53 @@
+---
+name: {{SKILL_NAME}}
+description: {{ONE_LINE_PURPOSE}}。触发场景：{{TRIGGER_PHRASES_FROM_USER}}。{{BOUNDARY_NOTE_IF_NEEDED}}
+---
+
+# {{SKILL_NAME}}
+
+{{ONE_TO_THREE_SENTENCES_WHY_THIS_SKILL_EXISTS}}
+
+## 流程（按序执行）
+
+| 步 | 任务 | 输入 | 输出 |
+|---|---|---|---|
+| 1 | {{STEP_1_NAME}} | {{INPUT_1}} | {{OUTPUT_1}} |
+| 2 | {{STEP_2_NAME}} | {{INPUT_2}} | {{OUTPUT_2}} |
+
+## 执行规则（核心约束）
+
+1. **{{RULE_1_IMPERATIVE}}**。Why: {{WHY_1}}。检验：{{CHECK_1}}
+2. **{{RULE_2_IMPERATIVE}}**。Why: {{WHY_2}}。检验：{{CHECK_2}}
+3. **{{RULE_3_IMPERATIVE}}**。Why: {{WHY_3}}。检验：{{CHECK_3}}
+
+## Red Flags（出现立刻停手）
+
+- 🚩 {{AI_REAL_EXCUSE_1}} → {{WHAT_TO_DO_INSTEAD_1}}
+- 🚩 {{AI_REAL_EXCUSE_2}} → {{WHAT_TO_DO_INSTEAD_2}}
+- 🚩 {{AI_REAL_EXCUSE_3}} → {{WHAT_TO_DO_INSTEAD_3}}
+
+## 示例
+
+**示例 1**（典型场景）：
+输入：{{EXAMPLE_1_INPUT}}
+输出：{{EXAMPLE_1_OUTPUT}}
+
+**示例 2**（不同方向，对抗首选项效应）：
+输入：{{EXAMPLE_2_INPUT}}
+输出：{{EXAMPLE_2_OUTPUT}}
+
+## 参数说明（如有外部参数）
+
+- `{{PARAM_NAME}}`：{{PARAM_DESC}}。**取自 {{PARAM_SOURCE}}**，不能从自然语言推断。无值时先调 {{FALLBACK}}。
+
+## 边界声明（不做什么）
+
+- 不做 {{OUT_OF_SCOPE_1}} —— 用 {{ALTERNATIVE_1}}
+- 不做 {{OUT_OF_SCOPE_2}} —— 用 {{ALTERNATIVE_2}}
+
+## 失败模式诊断
+
+| 症状 | 通常哪步出问题 |
+|---|---|
+| {{SYMPTOM_1}} | {{LIKELY_CAUSE_1}} |
+| {{SYMPTOM_2}} | {{LIKELY_CAUSE_2}} |
